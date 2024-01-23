@@ -1,0 +1,21 @@
+import { Sequelize } from "sequelize";
+import dotenv from 'dotenv';
+dotenv.config()
+
+// Configuracion de sequelize para conectar a mysql
+const db = new Sequelize(process.env.DATABASE_URL, {
+
+    define: {
+        timestamps: false
+    },
+    // Configuracion de sequelize
+    pool: {
+        max: 5,
+        min: 0, 
+        acquire: 30000,
+        idle: 10000
+    },
+    operatorsAliases: false
+});
+
+export default db;

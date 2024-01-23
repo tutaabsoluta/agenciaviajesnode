@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block contenido     
+    main.container.mt-5 
+        .row    
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo feugiat posuere. Quisque ut lectus eu tellus lacinia ultricies. Pellentesque augue neque, convallis eu nisi sit amet, venenatis sollicitudin massa. 
+
+                p Suspendisse potenti. Aenean at maximus libero. Sed vitae ante eu quam pretium efficitur. Aliquam varius tortor et rhoncus dapibus. Mauris ac urna elit. Ut quam felis, tempus quis sagittis ac, blandit sed augue. Aliquam ultrices, nunc in tincidunt efficitur, ipsum arcu convallis ipsum, ut egestas arcu massa quis libero.
+
+                p Donec luctus sem est, sed ornare felis pellentesque eget. Quisque tincidunt, augue consectetur hendrerit mollis, justo elit mollis lectus, eu posuere lacus justo non metus. Nunc egestas vitae est quis consequat.
+
+    .listado-iconos     
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad" class="img-fluid mb-4")
+                    h2.mb-2 Seguridad 
+                    p Suspendisse potenti. Aenean at maximus libero. Sed vitae ante eu quam pretium efficitur. Aliquam varius tortor et rhoncus dapibus. 
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos" class="img-fluid mb-4")
+                    h2.mb-2 Mejores Destinos 
+                    p Suspendisse potenti. Aenean at maximus libero. Sed vitae ante eu quam pretium efficitur. Aliquam varius tortor et rhoncus dapibus. 
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios" class="img-fluid mb-4")
+                    h2.mb-2 Mejores Precios 
+                    p Suspendisse potenti. Aenean at maximus libero. Sed vitae ante eu quam pretium efficitur. Aliquam varius tortor et rhoncus dapibus. 
